@@ -34,19 +34,19 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Software Developer", "Web Developer", "Coder"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing", {
+    //     strings: ["Software Developer", "Coder"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Software Developer", "Web Developer", "Coder"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing-2", {
+    //     strings: ["Software Developer", "Coder"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -71,3 +71,13 @@ $(document).ready(function(){
         }
     });
 });
+
+// Get & Store Date
+var today = new Date();
+today = today.getFullYear();
+
+// Check Date
+console.log(today);
+
+// Display Date
+$('.year').text(today);
