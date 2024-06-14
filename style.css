@@ -71,7 +71,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: gray;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -88,7 +88,8 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+/*    background: crimson;*/
+    background: #142d4c;
 }
 .navbar .max-width{
     display: flex;
@@ -101,7 +102,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color:gray;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -137,7 +138,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #142d4c;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -165,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/5.jpg") no-repeat center;
+    background: url("images/React_JS_Developers.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -199,19 +200,20 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: #142d4c;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #142d4c;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    color: gray;
+    /*background: #113f67;
+    border: 2px solid #113f67;*/
 }
 
 /* about section styling */
@@ -243,38 +245,44 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: #142d4c;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #142d4c;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
-    background: none;
+    color: lightgray;
+    background: #113f67;
+    border: 2px solid #113f67;
 }
 
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+/*    background: #111;*/
+/*    background: #113f67;*/
+    background: #142d4c;
 }
 .services .title::before,
 .teams .title::before{
     background: #fff;
+
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
-    content: "what i know";
+/*    background: #111;*/
+    background: #142d4c;
+    content: "SDE";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+/*    background: #222;*/
+    background: #113f67;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -282,7 +290,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+/*    background: crimson;*/
+    background: #113f67;;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -322,21 +331,51 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+/*    background: crimson;*/
+    background: #113f67;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #113f67;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
-    background: none;
+    color: gray;
+    background: #142d4c;
+    border: 2px solid #142d4c;
 }
-.skills .skills-content .right .bars{
+
+.skills .skills-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right p{
+    text-align: justify;
+}
+.skills .skills-content .right a{
+    display: inline-block;
+    background: #142d4c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #142d4c;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .right a:hover{
+    color: crimson;
+    background: #113f67;
+    border: 2px solid #113f67;
+}
+
+/*.skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
 .skills .skills-content .right .info{
@@ -377,14 +416,15 @@ section .title::after{
 }
 .skills-content .right .mysql::before{
     width: 70%;
-}
+}*/
 
-/* teams section styling */
+/* Projects section styling */
 .teams .title::after{
     content: "what i done";
 }
 .teams .carousel .card{
-    background: #222;
+/*    background: #222;*/
+    background: #113f67;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -414,11 +454,11 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #142d4c;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #113f67;
 }
 .owl-dots{
     text-align: center;
@@ -430,7 +470,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #113f67!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -439,7 +479,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #113f67!important;
 }
 
 /* contact section styling */
@@ -469,8 +509,8 @@ section .title::after{
     margin-left: 30px;
 }
 .contact .contact-content .row i{
-    font-size: 25px;
-    color: crimson;
+    font-size: 30px;
+    color: #142d4c;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -529,17 +569,20 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+/*  background: crimson;*/
+  background: #142d4c;
+  border: 2px solid #142d4c;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: crimson;
-  background: none;
+  color:gray;
+  /*background:#113f67;
+  border: 2px solid #113f67;*/
+
 }
 /* footer section styling */
 footer{
-    background: #111;
+    background: #142d4c;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -686,7 +729,7 @@ footer span a:hover{
 
 .project-button {
     display: inline-block;
-    background: crimson;
+    background: #142d4c;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -700,8 +743,8 @@ footer span a:hover{
 
 .project-button:hover{
 /*    transform: scale(1.05);*/
-      opacity: 0.8;
+      background: #113f67;
 }
-
-
-    
+#role{
+    color:gray;
+}
